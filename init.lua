@@ -1,0 +1,5 @@
+require('aldord.base')
+require('aldord.windows')
+require('aldord.highlights')
+require('aldord.plugins')
+require('aldord.maps')
