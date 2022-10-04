@@ -76,6 +76,12 @@ packer.startup(function(use)
     branch = 'v2', -- optional but strongly recommended
   })
 
+  -- Explorer
+  use({
+    'neoclide/coc.nvim',
+    branch = 'release', -- optional but strongly recommended
+  })
+
   use "leafOfTree/vim-matchtag"
 
   use {'mg979/vim-visual-multi', branch = 'master'}

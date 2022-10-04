@@ -8,6 +8,9 @@ keymap.set('i', 'jk', '<ESC>')
 -- Save 
 keymap.set('n', '<leader>w', ':w<cr>')
 
+-- explorer
+keymap.set('n', 'sf', '<Cmd>CocCommand explorer<CR>')
+
 -- Exit
 keymap.set('n', '<M-q>', ':q!<cr>')
 
