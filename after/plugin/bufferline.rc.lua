@@ -11,7 +11,7 @@ bufferline.setup({
     color_icons = true,
     offsets = {
       {
-        filetype = "NvimTree",
+        filetype = "coc-explorer",
         text = "File Explorer",
         highlight = "Directory",
         text_align = "center"
@@ -54,5 +54,5 @@ bufferline.setup({
 
 vim.keymap.set('n', '<Tab>', '<Cmd>BufferLineCycleNext<CR>', {})
 vim.keymap.set('n', '<S-Tab>', '<Cmd>BufferLineCyclePrev<CR>', {})
-vim.keymap.set('n', 'gb', '<cmd>BufferLinePick<CR>', {silent = true})
+vim.keymap.set('n', 'bg', '<Cmd>BufferLinePick<CR>', {silent = true})
 

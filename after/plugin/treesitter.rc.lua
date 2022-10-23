@@ -11,6 +11,7 @@ ts.setup {
     disable = {},
   },
   ensure_installed = {
+    "typescript",
     "astro",
     "tsx",
     "toml",
@@ -26,6 +27,9 @@ ts.setup {
   },
   autotag = {
     enable = true,
+    filetypes = {
+      'html', 'javascript', 'typescript', 'javascriptreact', 'typescriptreact', 'tsx', 'jsx','astro',
+    },
   },
 }
 

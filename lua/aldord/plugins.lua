@@ -44,6 +44,7 @@ packer.startup(function(use)
 
   -- Formatter
   use "mhartington/formatter.nvim"
+  -- use 'jose-elias-alvarez/null-ls.nvim'
 
   -- Icons in completion
   use 'onsails/lspkind-nvim'
@@ -54,7 +55,6 @@ packer.startup(function(use)
     "nvim-telescope/telescope.nvim",
     requires = { { "nvim-lua/popup.nvim" }, { "nvim-lua/plenary.nvim" } },
   })
-  use 'nvim-telescope/telescope-file-browser.nvim'
 
   -- Highlight
   use 'norcalli/nvim-colorizer.lua'
@@ -70,6 +70,8 @@ packer.startup(function(use)
   use 'windwp/nvim-autopairs'
   use 'windwp/nvim-ts-autotag'
   use 'windwp/nvim-spectre' -- Spectre for find and replace
+
+  use 'axelvc/template-string.nvim'
 
   use({
     "phaazon/hop.nvim",
@@ -90,6 +92,7 @@ packer.startup(function(use)
   -- tpope
   use "tpope/vim-fugitive"
   use "tpope/vim-surround"
+  use "tpope/vim-repeat"
 
   -- Status line
   use 'nvim-lualine/lualine.nvim'
@@ -101,9 +104,15 @@ packer.startup(function(use)
   use "EdenEast/nightfox.nvim"
 
   -- Git
- -- use {
- --   'lewis6991/gitsigns.nvim',
- --   tag = 'release' -- To use the latest release (do not use this if you run Neovim nightly or dev builds!)
- -- }
+  use {
+    'lewis6991/gitsigns.nvim',
+    tag = 'release' -- To use the latest release (do not use this if you run Neovim nightly or dev builds!)
+  }
+
+  --Markdown
+  use({
+    "iamcco/markdown-preview.nvim",
+    run = function() vim.fn["mkdp#util#install"]() end,
+  })
 
 end)

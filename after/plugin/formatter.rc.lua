@@ -1,4 +1,4 @@
--- Prettier function for formatter
+--Prettier function for formatter
 local prettier = function()
   return {
     exe = "prettier",
@@ -29,6 +29,7 @@ require("formatter").setup({
     markdown = { prettier },
     vue = { prettier },
     astro = { prettier },
+    cjs = { prettier },
     go = {
       -- goimport
       function()
@@ -91,6 +92,7 @@ vim.api.nvim_create_autocmd("BufWritePost", {
     "*.css",
     "*.scss",
     "*.md",
+    "*.mdx",
     "*.html",
     "*.lua",
     "*.json",
@@ -102,6 +104,7 @@ vim.api.nvim_create_autocmd("BufWritePost", {
     "*.go",
     "*.rs",
     "*.astro",
+    "*.cjs",
   },
   command = "FormatWrite",
 })

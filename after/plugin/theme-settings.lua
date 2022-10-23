@@ -9,7 +9,7 @@ require("tokyonight").setup({
 
 vim.cmd([[colorscheme tokyonight]])
 
---require('nightfox').setup({
+-- require('nightfox').setup({
 --  options = {
 --    transparent = true,
 --    styles = {
@@ -18,6 +18,6 @@ vim.cmd([[colorscheme tokyonight]])
 --      types = "italic,bold",
 --    }
 --  }
---})
+-- })
 --
---vim.cmd("colorscheme nightfox")
+-- vim.cmd("colorscheme nightfox")

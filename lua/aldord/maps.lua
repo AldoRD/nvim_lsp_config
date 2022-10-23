@@ -19,8 +19,8 @@ keymap.set('n', 'x', '"_x')
 
 -- Hop 
 keymap.set('n','f','<cmd>HopWord<cr>')
-keymap.set('n','F','<cmd>HopLine<cr>')
-keymap.set('n','T','<cmd>HopChar2<cr>')
+keymap.set('n','T','<cmd>HopLine<cr>')
+keymap.set('n','F','<cmd>HopChar2<cr>')
 
 -- Spectre
 keymap.set('n','<leader>S',"<cmd>lua require('spectre').open()<CR>")
